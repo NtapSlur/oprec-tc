@@ -1,0 +1,9 @@
+version : '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "20440:1234"
+    environment:
+        - PRODUCTION=true
